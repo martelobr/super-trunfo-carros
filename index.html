@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Trunfo de Carros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Super Trunfo de Carros</h1>
+
+        <div class="placar">
+            <p>Jogador: <span id="placar-jogador">0</span></p>
+            <p>IA: <span id="placar-ia">0</span></p>
+        </div>
+
+        <div class="mensagem" id="mensagem">
+            Escolha um atributo para competir!
+        </div>
+
+        <div class="areas-cartas">
+            <div class="area-jogador">
+                <h2>Sua Carta</h2>
+                <div class="carta" id="carta-jogador">
+                    </div>
+                <div class="botoes-atributos" id="botoes-atributos">
+                    </div>
+            </div>
+
+            <div class="area-ia">
+                <h2>Carta da IA</h2>
+                <div class="carta carta-escondida" id="carta-ia">
+                    <img src="https://st.depositphotos.com/1257959/3100/v/950/depositphotos_31006427-stock-illustration-playing-card-back-side.jpg" alt="Carta da IA escondida">
+                </div>
+            </div>
+        </div>
+
+        <button id="botao-proxima-rodada" class="botao-rodada" style="display: none;">Próxima Rodada</button>
+        <button id="botao-reiniciar" class="botao-rodada">Reiniciar Jogo</button>
+    </div>
+
+    <script src="cars.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
